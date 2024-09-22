@@ -8,15 +8,15 @@ public:
     float X, Y;
 
     // without defining a constructor you still have a default constructor that does nothing, ex:
-    // Entity()
-    // {
-    // }
-
-    // Constructor with member variables assigned to the parameters
-    Entity(float x, float y)
+    Entity()
     {
-        X = x;
-        Y = y;
+        std::cout << "Created Entity!" << std::endl;
+    }
+
+    // To declare a destructor, use the '~' infront of the class name
+    ~Entity()
+    {
+        std::cout << "Destroyed Entity!" << std::endl;
     }
 
     // example print method
@@ -29,9 +29,10 @@ public:
 // Log class for default constructor removal example
 class Log
 {
-public:
-    Log() = delete;
+private:
+    Log() {}
 
+public:
     static void Write()
     {
     }
