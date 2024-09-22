@@ -10,6 +10,8 @@ public:
     // without defining a constructor you still have a default constructor that does nothing, ex:
     Entity()
     {
+        X = 0.0f; // initializing X to 0
+        Y = 0.0f; // initializing Y to 0
         std::cout << "Created Entity!" << std::endl;
     }
 
@@ -26,25 +28,10 @@ public:
     }
 };
 
-// Log class for default constructor removal example
-class Log
-{
-private:
-    Log() {}
-
-public:
-    static void Write()
-    {
-    }
-};
-
 int main()
 {
-    Log::Write(); // Still has to be like this
-    Log l;        // and instances can't be created now because the constructor has been deleted
-
     // instantiating the Entity class
-    Entity e(420.0f, 69.0f); // With the use of member variables assigned to the parameters, you can initalize the values here.
+    Entity e; // With the use of member variables assigned to the parameters, you can initalize the values here.
     e.Print();
     std::cin.get();
 }
