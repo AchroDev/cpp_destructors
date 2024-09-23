@@ -31,7 +31,8 @@ public:
 int main()
 {
     // instantiating the Entity class
-    Entity e; // With the use of member variables assigned to the parameters, you can initalize the values here.
+    Entity e;
     e.Print();
+
     std::cin.get();
 }
