@@ -16,7 +16,7 @@ public:
     }
 
     // To declare a destructor, use the '~' infront of the class name
-    // If you initialize things in the constructor, you will want to use a destructor
+    // If you initialize things in the constructor, you will want to use a destructor to prevent memory leaks
     ~Entity()
     {
         std::cout << "Destroyed Entity!" << std::endl;
