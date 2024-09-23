@@ -28,11 +28,15 @@ public:
     }
 };
 
-int main()
+void Function()
 {
     // instantiating the Entity class
     Entity e;
     e.Print();
+}
 
+int main()
+{
+    Function();
     std::cin.get();
 }
