@@ -34,6 +34,7 @@ void Function()
     // instantiating the Entity class
     Entity e;
     e.Print();
+    e.~Entity(); // another way to call the destructor, not used very often
 }
 
 int main()
